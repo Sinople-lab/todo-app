@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Sinople-lab/todo-app/static/css/main.2f555c19.css",
-    "main.js": "/Sinople-lab/todo-app/static/js/main.5f064203.js",
-    "static/js/453.20aca57f.chunk.js": "/Sinople-lab/todo-app/static/js/453.20aca57f.chunk.js",
-    "index.html": "/Sinople-lab/todo-app/index.html",
-    "main.2f555c19.css.map": "/Sinople-lab/todo-app/static/css/main.2f555c19.css.map",
-    "main.5f064203.js.map": "/Sinople-lab/todo-app/static/js/main.5f064203.js.map",
-    "453.20aca57f.chunk.js.map": "/Sinople-lab/todo-app/static/js/453.20aca57f.chunk.js.map"
+    "main.css": "/todo-app/static/css/main.2f555c19.css",
+    "main.js": "/todo-app/static/js/main.a9029b46.js",
+    "static/js/453.20aca57f.chunk.js": "/todo-app/static/js/453.20aca57f.chunk.js",
+    "index.html": "/todo-app/index.html",
+    "main.2f555c19.css.map": "/todo-app/static/css/main.2f555c19.css.map",
+    "main.a9029b46.js.map": "/todo-app/static/js/main.a9029b46.js.map",
+    "453.20aca57f.chunk.js.map": "/todo-app/static/js/453.20aca57f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f555c19.css",
-    "static/js/main.5f064203.js"
+    "static/js/main.a9029b46.js"
   ]
 }
