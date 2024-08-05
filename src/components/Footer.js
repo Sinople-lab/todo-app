@@ -5,7 +5,7 @@ const Footer = () => {
         <p>Copyright &copy; 2024</p>
         
         {/* Link to the about page */}
-        <a href="/about">About</a>
+        <a href="/#/about">About</a>
     </footer>
   )
 }

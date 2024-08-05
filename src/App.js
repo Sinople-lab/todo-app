@@ -1,5 +1,5 @@
 import { useState } from "react"                // Import the library to create and modify the state
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {HashRouter as Router, Route, Routes} from 'react-router-dom'
 import Header from './components/Header';       // Import the components to build the page ...
 import Footer from './components/Footer';
 import About from "./pages/About";              // Import the pages views
@@ -13,7 +13,7 @@ import Home from "./pages/Home";
 // browsers can read it.
 
 // Example of creating a variable
-const name = 'Marty'  
+const name = 'User'  
 
 //  Main app function
 function App() {
@@ -40,8 +40,10 @@ function App() {
             by using one single template, index.html */}
         <Router>
           <Routes>
-            <Route path='/' element={<Home ShowAdd={showAddTask}/>} />
-            <Route path='/about' Component={About} />
+            <Route path="/" element={<Home ShowAdd={showAddTask}/>} />
+          </Routes>
+          <Routes>
+            <Route path="/about" exact element={<About />} />
           </Routes>
         </Router>
         

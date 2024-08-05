@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+:root {
+  --color-main: #71c6dd;
+  --color-main-light: #e1f6fb;
+  --color-dark: #3f4156;
+  --color-dark-medium: #51546e;
+  --color-dark-light: #696d97;
+  --color-light: #e5e5e5;
+  --color-gray: #8b8b8b;
+  --color-light-gray: #b2bdbd;
+  --color-bg: #2d2d39;
+  --color-success: #5dd693;
+  --color-error: #fc4b0b;
+}
+
+/*========== base styles ==========*/
+
 * {
-  box-sizing: border-box;
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  /* color: inherit; */
+  font-size: inherit;
 }
 
 body {
+  color: var(--color-light-gray);
+  background-color: var(--color-dark);
   font-family: 'Poppins', sans-serif;
+  margin: 20px;
 }
 
 .container {
@@ -28,17 +52,18 @@ body {
 }
 
 .btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
+  background-color: var(--color-dark-medium);
+  color: var(--color-light);
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
+  transition: all ease-in-out 0.3s;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
 }
 
 .btn:focus {
@@ -54,10 +79,22 @@ body {
   width: 100%;
 }
 
+a {
+  display: inline-block;
+  color: var(--color-main);
+  text-decoration: none;
+}
+
 .task {
-  background: #f4f4f4;
+  background: transparent;
+  border: 1px solid var(--color-dark-light);
+  padding: 1rem;
+  border-radius: 3px;
+  width: 100%;
+  color: var(--color-light);
+  font-weight: 500;
+  outline: none;
   margin: 5px;
-  padding: 10px 20px;
   cursor: pointer;
 }
 
@@ -76,7 +113,8 @@ body {
 }
 
 .form-control {
-  margin: 20px 0;
+  color: var(--color-main);
+  margin: 20px 20px;
 }
 
 .form-control label {
@@ -84,6 +122,7 @@ body {
 }
 
 .form-control input {
+  color: var(--color-dark-light);
   width: 100%;
   height: 40px;
   margin: 5px;
@@ -109,4 +148,10 @@ body {
 footer {
   margin-top: 30px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
 }
