@@ -10,20 +10,20 @@ const Home = ({ShowAdd}) => {
   const [tasks, setTasks] = useState([
     {
         id: 1,
-        text: 'Doctors Appointment',
-        day: 'Feb 5th at 2:30pm',
+        text: 'Nutritionists Appointment',
+        day: 'Sep 5th at 4:00pm',
         reminder: true,
      },
     {
         id:2,
-        text: 'Meeting at School',
-        day: 'Feb 6th at 1:30',
+        text: 'Therapy',
+        day: 'Aug 20th at 12:30 pm',
         reminder: true,
     },
     {
         id: 3,
-        text: 'Food Shopping',
-        day: 'Feb 5th at 2:30pm',
+        text: 'Wedding',
+        day: 'Feb 5th at 5:45pm',
         reminder: false,
     }
   ])
