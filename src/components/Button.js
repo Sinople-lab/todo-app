@@ -10,7 +10,7 @@ const Button = ({color,text, onClick}) => {
 
     // Apply styling for the button and also
     // add an event listener which is going to trigger
-    // a function when the button is clicked
+    // a function when the button is click
     <button
     className='btn'
     style={{backgroundColor:color}}
